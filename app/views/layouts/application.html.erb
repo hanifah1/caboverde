@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myapp</title>
+    <title>Cabo Verde Peanut Butter</title>
 
     <!-- see 3.9 for info about these three tags-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -13,21 +13,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <nav>
-  <ul>
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "About", simple_pages_about_path %></li>
-    <li><%= link_to "Contact", simple_pages_contact_path %></li>
-  </ul>
-</nav>
+  <body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid"> <!--to make the navigation bar stretch across the entire page-->
 
+          <!--hamburger menu-->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <div class="projectName navbar-brand">
+              <a href="#">Cabo Verde Peanut Butter</a>
+            </div> <!--end projectName -->
+
+          </div> <!--end navbar-header -->
+
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to "Home", root_path %></li>
+              <li><%= link_to "About", simple_pages_about_path %></li>
+              <li><%= link_to "Contact", simple_pages_contact_path %></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class = "container">
 <%= yield %>
+</div>
 
 <footer>
-  &copy; 2018 Bike Berlin
+  &copy; 2018 Cabo Verde Peanut Butter
 </footer>
   </body>
 </html>

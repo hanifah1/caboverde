@@ -3,8 +3,20 @@
 $font-stack: Impact, Charcoal, sans-serif;
 
 h1 {
-
   font: 80px $font-stack;
-
-
 }
+
+.container{
+  padding-top: 50px;
+  width: 80%;
+  text-align: center;
+}
+
+.projectName {
+    text-transform: uppercase;
+  }
+
+
+  .projectName a {
+    color: white;
+  }
