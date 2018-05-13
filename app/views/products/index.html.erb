@@ -2,44 +2,7 @@
 
 <h1>Products</h1>
 
-<table>
-  <thead>
-  <div class="row">
-    <div class="col-sm-6 col-md-4">
-      <%= image_tag("pbutter5.jpg",  class: "img-responsive my-image") %>
-      <a href="#"><h2>Flying Peanut</h2></a>
-      <p>description</p>
-      <strong>$ 42</strong>
-    </div><!-- /col -->
-
-    <div class="col-sm-6 col-md-4">
-      <%= image_tag("pbutter2.jpg",  class: "img-responsive my-image") %>
-      <a href="#"><h2>Peanut Smarts</h2></a>
-      <p>description</p>
-      <strong>$ 89</strong>
-    </div><!-- /col -->
-
-    <div class="col-sm-6 col-md-4">
-      <%= image_tag("pbutter3.jpg",  class: "img-responsive my-image") %>
-      <a href="#"><h2>Underwater Peanut</h2></a>
-      <p>description</p>
-      <strong>$ 77</strong>
-    </div><!-- /col -->
-  </div>
-
-</thead>
-
-  <tbody>
-    <% @products.each do |product| %>
-    <div class="col-sm-6 col-md-4">
-        <a href="#"><h2><%= product.name %></h2></a>
-        <p><%= product.description %></p>
-        <strong>product.price</strong>
-      </div><!-- /col -->
-
-    <% end %>
-  </tbody>
-</table>
+  <%= render @products %>
 
 <br>
 
