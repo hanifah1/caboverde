@@ -2,7 +2,9 @@
 
 <h1>Products</h1>
 
-  <%= render @products %>
+    <% @products.each do |product| %>
+       <%= render product %>
+    <% end %>
 
 <br>
 
