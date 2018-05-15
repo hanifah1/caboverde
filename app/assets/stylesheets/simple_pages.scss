@@ -6,6 +6,11 @@ h1 {
   font: 80px $font-stack;
 }
 
+.carousel-caption{
+  color: black;
+}
+
+
 .container{
   padding-top: 50px;
   width: 80%;
@@ -13,13 +18,13 @@ h1 {
 }
 
 .projectName {
-    text-transform: uppercase;
-  }
+  text-transform: uppercase;
+}
 
 
-  .projectName a {
-    color: white;
-  }
+.projectName a {
+  color: white;
+}
 
 .th {
   font: 90px;
