@@ -16,6 +16,14 @@
 </p>
 
 <p>
-  <strong>Price:</strong>
+  <strong>Price: $</strong>
   <%= @product.price %>
+</p>
+
+<p>
+<%= @product.comments.rating_desc.first %>
+</p>
+
+<p>
+<%= @product.highest_rating_comment %>
 </p>
