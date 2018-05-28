@@ -21,9 +21,13 @@
 </p>
 
 <p>
-  <%= render 'new_comment' %>
+<%= @product.comments.rating_desc.first %>
 </p>
 
 <p>
-  <%= render 'comments' %>
+<%= render 'comments' %>
+</p>
+
+<p>
+<%= render 'new_comment' %>
 </p>
