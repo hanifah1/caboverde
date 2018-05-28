@@ -1,6 +1,5 @@
 class Product < ApplicationRecord
   has_many :orders
-  has_many :comments
 end
 
 class User < ActiveRecord::Base

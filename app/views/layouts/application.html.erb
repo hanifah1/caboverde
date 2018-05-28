@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
 
-  <title>Cabo Verde Peanut Butter</title>
+    <title>Cabo Verde Peanut Butter</title>
 
-  <!-- see 3.9 for info about these three tags-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- see 3.9 for info about these three tags-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -14,72 +14,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-<body data-spy="scroll" data-target=".navbar">
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid"> <!--to make the navigation bar stretch across the entire page-->
+  <body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid"> <!--to make the navigation bar stretch across the entire page-->
 
-      <!--hamburger menu-->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+          <!--hamburger menu-->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-        <div class="projectName navbar-brand">
-          <a href="#">Cabo Verde Peanut Butter</a>
-        </div> <!--end projectName -->
+            <div class="projectName navbar-brand">
+              <a href="#">Cabo Verde Peanut Butter</a>
+            </div> <!--end projectName -->
 
-      </div> <!--end navbar-header -->
+          </div> <!--end navbar-header -->
 
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "About", simple_pages_about_path %></li>
-          <li><%= link_to "Contact", simple_pages_contact_path %></li>
-          <li><%= link_to "Products", products_path %></li>
-          <li><%= link_to "Orders", orders_path %></li>
-          <li><%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-            <%= form.label :q, 'Search for:' %>
-            <%= form.text_field :q, id: 'q', value: params[:q] %>
-            <%= form.submit 'Search' %>
-            <% end %></li>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to "Home", root_path %></li>
+              <li><%= link_to "About", simple_pages_about_path %></li>
+              <li><%= link_to "Contact", simple_pages_contact_path %></li>
+              <li><%= link_to "Products", products_path %></li>
+              <li><%= link_to "Orders", orders_path %></li>
+              <li><%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+  <%= form.label :q, 'Search for:' %>
+  <%= form.text_field :q, id: 'q', value: params[:q] %>
+  <%= form.submit 'Search' %>
+<% end %></li>
 
-          </ul>
-        </div>
 
-        <ul class="nav pull-right">
+            </ul>
+
+
+          </div>
+
+          <ul class="nav pull-right">
           <li>
-            <% if user_signed_in? %>
-            <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-            <% else %>
-            <%= link_to('Login', new_user_session_path) %>
-            <% end %>
+          <% if user_signed_in? %>
+          <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+          <% else %>
+          <%= link_to('Login', new_user_session_path) %>
+          <% end %>
           </li>
-        </ul>
+          </ul>
 
-      </div>
-    </div>
-  </nav>
+        </div>
+        </div>
+      </nav>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <% if notice %>
-  <p id="notice" class="alert alert-info"><%= notice %></p>
-  <% end %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <% if notice %>
+    <p id="notice" class="alert alert-info"><%= notice %></p>
+<% end %>
 
 
-  <div class = "container">
-    <%= yield %>
-  </div>
+<div class = "container">
+<%= yield %>
+</div>
 
-  <footer>
-    &copy; 2018 Cabo Verde Peanut Butter
-  </footer>
-</body>
+<footer>
+  &copy; 2018 Cabo Verde Peanut Butter
+</footer>
+  </body>
 </html>
