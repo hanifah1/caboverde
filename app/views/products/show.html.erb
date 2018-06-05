@@ -6,28 +6,33 @@
 </div>
 </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<div class="col-md-6 col-xs-6">
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+  <p>
+    <strong>Name:</strong>
+    <%= @product.name %>
+  </p>
 
-<p>
-  Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> 
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @product.description %>
+  </p>
 
-<p>
-  <strong>Price: $</strong>
-  <%= @product.price %>
-</p>
+  <p>
+    <strong>Average Rating:</strong>
+     <div class="rated" id="average-rating" data-score="<%= @product.comments.average(:rating).to_f %>"></div>
+  </p>
 
-<p>
-  <%= render 'new_comment' %>
-</p>
+  <p>
+    <strong>Price: $</strong>
+    <%= @product.price %>
+  </p>
+
+  <p>
+    <%= render 'new_comment' %>
+  </p>
+
+</div>
 
 <p>
   <div class="col-md-12 col-xs-12">
