@@ -20,7 +20,7 @@
 
   <p>
     <strong>Average Rating:</strong>
-     <div class="rated" id="average-rating" data-score="<%= @product.comments.average(:rating).to_f %>"></div>
+     <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
   </p>
 
   <p>
