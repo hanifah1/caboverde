@@ -28,6 +28,10 @@
     <%= @product.price %>
   </p>
 
+  <%= form_with(url: '/payments/create') do |form| %>
+  <%= render partial: "shared/stripe_checkout_button" %>
+<% end %>
+
   <p>
     <%= render 'new_comment' %>
   </p>
