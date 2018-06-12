@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   end
   resources :products
   resources :orders, only: [:index, :show, :create, :destroy]
-
+  resources :payments, only: [:create]
 
   get 'simple_pages/about'
 
