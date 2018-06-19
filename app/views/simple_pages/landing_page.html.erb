@@ -12,9 +12,9 @@
 
 
   <div class="your-class">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
+    <% @products.each do |product| %>
+      <%= image_tag(product.image_url, class: "img-responsive center-block") %>
+    <% end %>
   </div>
 
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
