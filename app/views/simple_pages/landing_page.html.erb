@@ -1,7 +1,22 @@
+<html>
+<head>
+
 <p id="notice"><%= notice %></p>
 <h2>Featured Product:</h2>
 
-<tbody>
+<link rel="stylesheet" type="text/css" href="app/assets/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="app/assets/slick/slick-theme.css"/>
+</head>
+
+<body>
+
+
+  <div class="your-class">
+    <div>your content</div>
+    <div>your content</div>
+    <div>your content</div>
+  </div>
+
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -32,5 +47,19 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</tbody>
-</table>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.your-class').slick({
+
+  });
+});
+</script>
+
+</body>
+</html>
