@@ -1,21 +1,11 @@
-<html>
 <head>
 
 <p id="notice"><%= notice %></p>
 <h2>Featured Product:</h2>
 
-<link rel="stylesheet" type="text/css" href="app/assets/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="app/assets/slick/slick-theme.css"/>
 </head>
 
 <body>
-
-
-  <div class="your-class">
-    <% @products.each do |product| %>
-      <%= image_tag(product.image_url, class: "img-responsive center-block") %>
-    <% end %>
-  </div>
 
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -48,18 +38,4 @@
     </a>
   </div>
 
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-   <script type="text/javascript" src="slick/slick.min.js"></script>
-
-
-<script type="text/javascript">
-$(document).ready(function(){
-  $('.your-class').slick({
-
-  });
-});
-</script>
-
 </body>
-</html>
