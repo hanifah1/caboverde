@@ -5,7 +5,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'hanifahs-heroku.herokuapp.com' }
 
   config.cache_classes = true
-  
+
   config.cache_store = :dalli_store,
                     (ENV["MEMCACHIER_SERVERS"] || "").split(","),
                     {:username => ENV["MEMCACHIER_USERNAME"],
@@ -100,4 +100,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.web_socket_server_url = "wss://hanifahs-heroku.herokuapp.com/cable"
+config.action_cable.allowed_request_origins = ['https://hanifahs-heroku.herokuapp.com', 'http://hanifahs-heroku.herokuapp.com']
 end
