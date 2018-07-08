@@ -8,6 +8,6 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
   },
 
   received: function() {
-
+    $(".alert.alert-info").show();
   }
 });
