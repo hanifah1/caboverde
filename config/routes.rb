@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 
   get 'simple_pages/landing_page'
 
-  root 'simple_pages#landing_page'
+  root 'simple_pages#index'
 
   post 'simple_pages/thank_you'
 
