@@ -14,3 +14,10 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  background: url('app/assets/images/cabov1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
