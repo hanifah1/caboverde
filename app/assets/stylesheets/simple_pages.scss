@@ -1,12 +1,6 @@
-$font-stack: 'Roboto Condensed', sans-serif;
-;
-
-h1 {
-  font: 50px $font-stack;
-}
-
 h1 {
   font-size: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
   letter-spacing: 10px;
 }
 
@@ -17,7 +11,7 @@ h2 {
   padding-right: 10px;
 }
 
-.spages {
+#about, #contact, #pindex{
   margin: 12%;
   margin-top: 121px;
   text-align: center;
@@ -75,12 +69,8 @@ h2 {
 
 // A B O U T
 
-#about {
-  font-size: 33px;
-}
-
 #about p {
-  font-size: 22px;
+  font-size: 20px;
   text-align: left;
   font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -90,4 +80,33 @@ h2 {
 #contact {
   margin-left: 30%;
   margin-right: 30%;
+}
+
+// P R O D U C T    I N D E X
+
+#pindex {
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+#pindex2 h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-bottom: 10px;
+  letter-spacing: 5px;
+  padding-right: 1px;
+  color: #666;
+}
+
+#loginp {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#loginp h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+  padding-right: 1px;
+  color: #666;
 }
