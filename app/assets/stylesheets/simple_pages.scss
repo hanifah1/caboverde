@@ -1,15 +1,22 @@
-
-
-$font-stack: Impact, Charcoal, sans-serif;
-
 h1 {
-  font: 80px $font-stack;
+  font-size: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 10px;
 }
 
-.carousel-caption{
-  color: black;
+h2 {
+  padding-top: -9px;
+  padding-bottom: 45px;
+  letter-spacing: -5px;
+  padding-right: 10px;
 }
 
+#about, #contact, #products{
+  margin: 12%;
+  margin-top: 121px;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
 .container{
   padding-top: 70px;
@@ -19,11 +26,14 @@ h1 {
 
 .projectName {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 
 .projectName a {
-  color: white;
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
 }
 
 .th {
@@ -31,16 +41,47 @@ h1 {
 }
 
 .alert {
-  margin-top: 50px;
+  //margin-top: 50px;
 }
 
 #nav {
-  font-weight: bold;
-  color: white;
+  color: black;
+  background-color: #F0F3F4;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #login {
-  font-weight: bold;
   color: white;
   font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 30px;
+  padding-right:20px;
+
+  a {
+    &:visited {
+      color: white;
+    }
+    &:hover {
+      background-color: black;
+    }
+  }
+}
+
+// A B O U T
+
+#about {
+  font-size: 33px;
+}
+
+#about p {
+  font-size: 28px;
+  text-align: left;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+//  C O N T A C T
+
+#contact {
+  margin-left: 30%;
+  margin-right: 30%;
 }

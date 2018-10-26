@@ -1,87 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
 
-    <title>Cabo Verde Peanut Butter</title>
+  <title>Cabo Verde Peanut Butter</title>
 
-    <!-- see 3.9 for info about these three tags-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- see 3.9 for info about these three tags-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-  </head>
+</head>
 
-  <body data-spy="scroll" data-target=".navbar">
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid"> <!--to make the navigation bar stretch across the entire page-->
+<body data-spy="scroll" data-target=".navbar">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div> <!--to make the navigation bar stretch across the entire page-->
 
-          <!--hamburger menu-->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+      <!--hamburger menu-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-            <div class="projectName navbar-brand">
-              <a href="#">Cabo Verde Peanut Butter</a>
-            </div> <!--end projectName -->
+        <div class="projectName navbar-brand" id="logo">
+        <p>  <img src="/assets/cabov2.png">
+          <%= link_to "CABO VERDE PEANUT BUTTER", simple_pages_index_path %></p>
+        </div> <!--end projectName -->
 
-          </div> <!--end navbar-header -->
+      </div> <!--end navbar-header -->
 
-          <div class="navbar-collapse collapse" id="nav">
-            <ul class="nav navbar-nav navbar-right">
-              <li><%= link_to "Home", simple_pages_index_path %></li>
-              <li><%= link_to "About", simple_pages_about_path %></li>
-              <li><%= link_to "Contact", simple_pages_contact_path %></li>
-              <li><%= link_to "Products", products_path %></li>
-              <li><%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-  <%= form.label :q, 'Search for:' %>
-  <%= form.text_field :q, id: 'q', value: params[:q] %>
-  <%= form.submit 'Search' %>
-<% end %></li>
-
-
-            </ul>
+      <div class="navbar-collapse collapse" id="nav">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "HOME", simple_pages_index_path %></li>
+          <li><%= link_to "OUR STORY", simple_pages_about_path %></li>
+          <li><%= link_to "CONTACT", simple_pages_contact_path %></li>
+          <li><%= link_to "PRODUCTS", products_path %></li>
+          <li><%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+            <%= form.text_field :q, id: 'q', value: params[:q] %>
+            <%= form.submit 'Search' %>
+            <% end %></li>
 
 
-          </div>
-
-          <ul class="nav pull-right" id="login">
-          <li>
-          <% if user_signed_in? %>
-          <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-          <% else %>
-          <%= link_to('Login', new_user_session_path) %>
-          <% end %>
-          </li>
           </ul>
 
+
         </div>
-        </div>
-      </nav>
 
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-      <% if notice %>
-    <p id="notice" class="alert alert-info"><%= notice %></p>
-<% end %>
+        <div class="nav pull-right" id="login">
 
+            <% if user_signed_in? %>
+            <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+            <% else %>
+            <%= link_to('LOG IN / BECOME A MEMBER', new_user_session_path) %>
+            <% end %>
+          </div>
 
-<div class = "container">
-<%= yield %>
+      </div>
+    </div>
+  </nav>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <% if notice %>
+  <p id="notice" class="alert alert-info"><%= notice %></p>
+  <% end %>
+</body>
+
+<div >
+  <%= yield %>
 </div>
 
 <footer>
   &copy; 2018 Cabo Verde Peanut Butter
 </footer>
-  </body>
+
 </html>
