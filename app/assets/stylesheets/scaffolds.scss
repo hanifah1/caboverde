@@ -1,9 +1,16 @@
-ul {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 14px;
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
   line-height: 18px;
-  padding-top: 10px;
-  padding-right: 15px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 pre {
@@ -21,7 +28,7 @@ a {
 
   &:hover {
     color: #fff;
-    background-color: #fff;
+    background-color: #000;
   }
 }
 
