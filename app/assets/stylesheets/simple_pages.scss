@@ -1,6 +1,12 @@
+$font-stack: 'Roboto Condensed', sans-serif;
+;
+
+h1 {
+  font: 50px $font-stack;
+}
+
 h1 {
   font-size: 50px;
-  font-family: 'Roboto Condensed', sans-serif;
   letter-spacing: 10px;
 }
 
