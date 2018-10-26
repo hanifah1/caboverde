@@ -1,0 +1,267 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 5, /home/hanifah/myapp/app/assets/stylesheets/products.scss */
+.th {
+  font: 90px;
+}
+/* line 1, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+ul {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+/* line 9, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 10px;
+}
+
+/* line 15, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 18, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 22, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #fff;
+}
+
+/* line 28, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 32, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 37, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 42, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 46, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 52, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 59, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 75, /home/hanifah/myapp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 1, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-size: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 10px;
+}
+
+/* line 7, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  padding-top: -9px;
+  padding-bottom: 45px;
+  letter-spacing: -5px;
+  padding-right: 10px;
+}
+
+/* line 14, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+#about, #contact, #pindex {
+  margin: 12%;
+  margin-top: 121px;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* line 21, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+.container {
+  padding-top: 70px;
+  width: 80%;
+  text-align: center;
+}
+
+/* line 27, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+.projectName {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* line 33, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+.projectName a {
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+}
+
+/* line 39, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+.th {
+  font: 90px;
+}
+
+/* line 47, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+#nav {
+  color: black;
+  background-color: #F0F3F4;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* line 53, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+#login {
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 30px;
+  padding-right: 20px;
+}
+/* line 61, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+#login a:visited {
+  color: white;
+}
+/* line 64, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+#login a:hover {
+  background-color: black;
+}
+
+/* line 72, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+#about p {
+  font-size: 20px;
+  text-align: left;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/* line 80, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+#contact {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+/* line 87, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+#pindex {
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+/* line 92, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+#pindex2 h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-bottom: 10px;
+  letter-spacing: 5px;
+  padding-right: 1px;
+  color: #666;
+}
+
+/* line 100, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+#loginp {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* line 106, /home/hanifah/myapp/app/assets/stylesheets/simple_pages.scss */
+#loginp h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+  padding-right: 1px;
+  color: #666;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
