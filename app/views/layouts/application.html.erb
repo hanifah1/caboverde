@@ -34,7 +34,7 @@
         </button>
 
         <div class="projectName navbar-brand" id="logo">
-          <p>  <<img src="/app/assets/images/cabov2.png">
+          <p>  <%= image_tag("cabov2.png",  class: "img-responsive", style: 'display:inline') %>
           <%= link_to "CABO VERDE PEANUT BUTTER", simple_pages_index_path %></p>
       </div> <!--end projectName -->
 
@@ -77,11 +77,12 @@
   <% end %>
 </body>
 
-<div >
+<div id="prgm" >
   <%= yield %>
 </div>
 
 <footer>
+
   &copy; 2018 Cabo Verde Peanut Butter
 </footer>
 
