@@ -10,9 +10,9 @@ User.delete_all
 Product.delete_all
 Order.delete_all
 
-Product.create(name: 'The Flying Peanut', description: 'description', price: 23, image_url: 'pbutter5.jpg' )
-Product.create(name: 'Underwater Peanut', description: 'description', price: 44, image_url: 'pbutter3.jpg' )
-Product.create(name: 'Peanut Smarts', description: 'description', price: 37, image_url: 'pbutter2.jpg' )
-Product.create(name: 'PB Time Freeze', description: 'description', price: 46, image_url: 'pbutter8.jpg' )
-Product.create(name: 'Peanut Night Vision', description: 'description', price: 29, image_url: 'pbutter7.jpg' )
-Product.create(name: 'PB Animal Echolocation', description: 'description', price: 37, image_url: 'pbutter9.jpg' )
+Product.create(name: 'Cran Peanut', description: 'Organic & Gluten Free', price: 2300, image_url: 'five.jpg' )
+Product.create(name: 'Salted Peanut', description: 'Organic & Gluten Free', price: 4400, image_url: 'two.jpg' )
+Product.create(name: 'Blue Peanut', description: 'Organic & Gluten Free', price: 3700, image_url: 'three.jpg' )
+Product.create(name: 'Coco Peanut', description: 'Organic & Gluten Free', price: 4600, image_url: 'four.jpg' )
+Product.create(name: 'Smore Peanut', description: 'Organic & Gluten Free', price: 2900, image_url: 'one.jpg' )
+Product.create(name: 'Palm Peanut', description: 'Organic & Gluten Free', price: 3700, image_url: 'six.jpg' )
