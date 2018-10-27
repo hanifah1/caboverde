@@ -1,13 +1,15 @@
-<p id="notice"><%= notice %></p>
 <div id="prodshow">
+
+<p id="notice"><%= notice %></p>
+
 <p>
-  <div class="col-md-6 col-xs-6">
+  <div class="col-md-6 col-xs-6" align="center">
   <%= image_tag(@product.image_url,  class: "img-responsive img-zoom", width: "350", data_zoom_image: @product.image_url) %>
 </div>
 </p>
 
 <div class="row" data-product-id="<%= @product.id %>">
-<div class="col-md-6 col-xs-6">
+<div class="col-md-6 col-xs-6" align="center">
 
   <h1>
      <%= @product.name %>
@@ -45,7 +47,7 @@
 </div>
 
 <p>
-  <div class="col-md-12 col-xs-12">
+  <div class="col-md-12 col-xs-12" align="center">
     <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
     <%= render 'comments' %>
     <%= will_paginate @comments %>
