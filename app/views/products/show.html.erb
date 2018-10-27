@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div id="prodshow">
 <p>
   <div class="col-md-6 col-xs-6">
   <%= image_tag(@product.image_url,  class: "img-responsive img-zoom", width: "350", data_zoom_image: @product.image_url) %>
@@ -9,13 +9,11 @@
 <div class="row" data-product-id="<%= @product.id %>">
 <div class="col-md-6 col-xs-6">
 
-  <p>
-    <strong>Name:</strong>
-    <%= @product.name %>
-  </p>
+  <h1>
+     <%= @product.name %>
+  </h1>
 
   <p>
-    <strong>Description:</strong>
     <%= @product.description %>
   </p>
 
@@ -48,3 +46,4 @@
     <%= will_paginate @comments %>
   </div>
 </p>
+</div>
